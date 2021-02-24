@@ -46,8 +46,8 @@ for i in range(n-2,-1,-1):
 
     for j in range(i+1,n):
         x[i] = x[i] - a[i][j]*x[j]
-
-    x[i] = x[i]/a[i][i]
+    if a[i][i]!=0:
+        x[i] = x[i]/a[i][i]
 
 # Displaying solution
 print('\nRequired solution is: ')
