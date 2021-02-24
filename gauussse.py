@@ -48,6 +48,9 @@ for i in range(n-2,-1,-1):
         x[i] = x[i] - a[i][j]*x[j]
     if a[i][i]!=0:
         x[i] = x[i]/a[i][i]
+    else:
+        print('not zero')
+        exit(0)
 
 # Displaying solution
 print('\nRequired solution is: ')
